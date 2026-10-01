@@ -12,12 +12,22 @@ python3 -m http.server 8080
 
 Poté otevřete `http://localhost:8080`.
 
+## Kontrola před publikováním
+
+Po prvním `npm install` lze spustit automatické testy hlavní stránky,
+mobilního menu, recenzí a galerie:
+
+```bash
+npm test
+```
+
 ## Struktura
 
 - `index.html` — hlavní stránka
 - `galerie.html` — filtrovatelná galerie 295 fotografií
 - `principy.html` — přehled článků
 - `principy/` — jednotlivé články
+- `404.html` — vlastní chybová stránka
 - `assets/gallery/` — lokálně uložené optimalizované fotografie
 - `data/gallery.json` — editovatelná metadata galerie
 - `tools/import_site123.py` — opakovatelný import z původního webu

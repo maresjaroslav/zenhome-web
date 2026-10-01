@@ -195,6 +195,12 @@ def main() -> None:
         "team.webp": ("https://files.cdn-files-a.com/uploads/6189130/normal_632081b0f1b98.png", 2000, 88),
         "logo.webp": ("https://files.cdn-files-a.com/uploads/6189130/400_filter_nobg_6942988fdcfda.png", 2000, 88),
         "podcast-cover.webp": ("https://img.youtube.com/vi/gSKuhpKDWy0/maxresdefault.jpg", 1280, 82),
+        "review-kamil-jana.webp": ("https://images.cdn-files-a.com/uploads/6189130/400_634fd989a5085_filter_634fd9a32146b.jpg", 800, 84),
+        "review-jiri-martina.webp": ("https://images.cdn-files-a.com/uploads/6189130/400_63036c14b16e0_filter_63036d39934d7.jpg", 800, 84),
+        "review-marek.webp": ("https://images.cdn-files-a.com/uploads/6189130/400_634fdee4a7722_filter_634fdef707ec9.jpg", 800, 84),
+        "review-denis-lucie.webp": ("https://images.cdn-files-a.com/uploads/6189130/400_630371612c242_filter_6303725fdfd12.jpg", 800, 84),
+        "review-jitka-tomas.webp": ("https://images.cdn-files-a.com/uploads/6189130/400_634fe26b6968f_filter_634fe27e1c267.jpg", 800, 84),
+        "review-klaus.webp": ("https://images.cdn-files-a.com/uploads/6189130/400_6323134b9df12_filter_6323139fe33cf.jpg", 800, 84),
     }
     for filename, (url, max_size, quality) in special_assets.items():
         save_webp(url, ROOT / "assets" / filename, max_size, quality)

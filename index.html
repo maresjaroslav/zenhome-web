@@ -15,6 +15,71 @@
   <meta property="og:title" content="ZENHOME | Vila pro minimalisty">
   <meta property="og:description" content="Architektura bez zbytečností, kde se dobře žije.">
   <meta property="og:image" content="https://www.zenhome.cz/assets/hero-exterior.webp">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Architect",
+        "@id": "https://www.zenhome.cz/#studio",
+        "name": "ZENHOME",
+        "url": "https://www.zenhome.cz/",
+        "email": "andrea@zenhome.cz",
+        "telephone": "+420604830852",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Střední 55",
+          "addressLocality": "Brno",
+          "addressCountry": "CZ"
+        },
+        "sameAs": [
+          "https://www.instagram.com/zenhome.cz/",
+          "https://www.facebook.com/zenhome.cz"
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Je dům o ploše kolem 100 m² dostatečně prostorný?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Srdcem ZENHOME je společný obytný prostor o ploše téměř 60 m². Kolem něj jsou menší samostatné pokoje a nezbytné zázemí. Díky absenci chodeb a promyšlenému půdorysu působí dům výrazně prostorněji, než napovídá jeho celková plocha." }
+          },
+          {
+            "@type": "Question",
+            "name": "Je ZENHOME typový dům, nebo se dá přizpůsobit?",
+            "acceptedAnswer": { "@type": "Answer", "text": "ZENHOME není hotový dům, který pouze umístíme na pozemek. Je to prověřený architektonický princip, který pokaždé přizpůsobujeme místu, světovým stranám, výhledům i potřebám rodiny." }
+          },
+          {
+            "@type": "Question",
+            "name": "Z jakých materiálů se ZENHOME staví?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Upřednostňujeme autentické a trvanlivé materiály, které mohou zůstat přiznané: betonovou podlahu, dřevěný strop, zdivo z betonových tvárnic nebo cementové stěrky. Konkrétní konstrukce vždy ladíme podle místa, rozpočtu a požadavků klienta." }
+          },
+          {
+            "@type": "Question",
+            "name": "Co znamená orientační cena od 4 mil. Kč?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Jde o orientační cenu samotné stavby jednoduchého domu kolem 100 m² v základním standardu, včetně základů, technologií, instalací, kompletních povrchů a zařízené koupelny. Konkrétní částka závisí na řešení, vybavení a místních podmínkách." }
+          },
+          {
+            "@type": "Question",
+            "name": "Zajistíte projekt a povolení?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Ano. Zpracujeme architektonickou studii, dokumentaci pro povolení záměru i podklady potřebné pro realizaci stavby. Podle domluvy můžeme zajistit také inženýring a komunikaci s úřady." }
+          },
+          {
+            "@type": "Question",
+            "name": "Postavíte nám dům na klíč?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Jsme architekti a projektanti, nikoliv stavební firma. Dům navrhneme, zpracujeme projektovou dokumentaci, pomůžeme s výběrem dodavatele a během stavby poskytujeme autorský dozor." }
+          },
+          {
+            "@type": "Question",
+            "name": "Máme pozemek a chceme ZENHOME. Jak začít?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Pošlete nám základní informace o pozemku, vaše představy a případně odkaz na inzerát nebo dostupné podklady. Nejprve ověříme, zda se pro pozemek a váš rozpočet ZENHOME hodí, a doporučíme další krok." }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
   <link rel="preload" as="image" href="assets/hero-exterior-1400.webp" imagesrcset="assets/hero-exterior-900.webp 900w, assets/hero-exterior-1400.webp 1400w, assets/hero-exterior.webp 2000w" imagesizes="100vw">
   <link rel="stylesheet" href="styles.css">
   <script defer src="script.js"></script>
@@ -32,23 +97,27 @@
       <a href="#reference">Reference</a>
       <a href="#kdo-jsme">Kdo jsme</a>
       <a href="principy.html">Principy</a>
+      <span class="nav-socials" role="group" aria-label="Sociální sítě">
+        <a href="https://www.instagram.com/zenhome.cz/" target="_blank" rel="noopener" aria-label="ZENHOME na Instagramu">IG</a>
+        <a href="https://www.facebook.com/zenhome.cz" target="_blank" rel="noopener" aria-label="ZENHOME na Facebooku">FB</a>
+      </span>
       <a class="nav-contact" href="#kontakt">Kontakt</a>
     </nav>
   </header>
+  <button class="menu-backdrop" type="button" tabindex="-1" aria-label="Zavřít menu" data-menu-backdrop></button>
 
   <main id="obsah">
     <section class="hero">
-      <picture>
+      <div class="hero-copy wrap">
+        <p class="kicker">Vila pro minimalisty</p>
+        <h1>Architektura bez zbytečností, kde se dobře žije.</h1>
+        <a class="text-link" href="#o-zenhome">Poznat ZENHOME <span aria-hidden="true">↓</span></a>
+      </div>
+      <picture class="hero-media">
         <source media="(max-width: 700px)" srcset="assets/hero-exterior-900.webp">
         <source media="(max-width: 1500px)" srcset="assets/hero-exterior-1400.webp">
         <img class="hero-image" src="assets/hero-exterior.webp" alt="ZENHOME se zahradou a velkou pergolou" width="2000" height="1493" fetchpriority="high">
       </picture>
-      <div class="hero-shade"></div>
-      <div class="hero-copy">
-        <p class="kicker">Vila pro minimalisty</p>
-        <h1>Architektura bez zbytečností, kde se dobře žije.</h1>
-        <a class="text-link text-link-light" href="#o-zenhome">Poznat ZENHOME <span aria-hidden="true">↓</span></a>
-      </div>
     </section>
 
     <section class="facts section-green" aria-label="ZENHOME v číslech">
@@ -69,12 +138,14 @@
     </section>
 
     <section class="image-statement">
+      <div class="statement-copy wrap">
+        <p>Velký prostor.<br>Hodně světla.<br>Autentické materiály.</p>
+      </div>
       <picture>
         <source media="(max-width: 700px)" srcset="assets/hero-interior-900.webp">
         <source media="(max-width: 1500px)" srcset="assets/hero-interior-1400.webp">
         <img src="assets/hero-interior.webp" alt="Prosvětlený interiér domu ZENHOME s dřevěným stropem" width="2000" height="1272" loading="lazy">
       </picture>
-      <p class="reveal">Velký prostor.<br>Hodně světla.<br>Autentické materiály.</p>
     </section>
 
     <section class="section section-paper" id="o-zenhome">
@@ -146,11 +217,23 @@
         </div>
         <a class="text-link text-link-light" href="galerie.html">Prohlédnout všech 295 fotografií <span aria-hidden="true">↗</span></a>
       </div>
-      <section class="preview-grid wrap" aria-label="Výběr z galerie">
-        <a href="galerie.html#zenhome" aria-label="Galerie ZENHOME"><img src="assets/gallery/thumbs/zenhome-001.webp" alt="ZENHOME se zahradou" loading="lazy"></a>
-        <a href="galerie.html#zenhome-u-prahy" aria-label="ZENHOME u Prahy"><img src="assets/gallery/thumbs/zenhome-028.webp" alt="ZENHOME u Prahy" loading="lazy"></a>
-        <a href="galerie.html#zenhome-u-bratislavy" aria-label="ZENHOME u Bratislavy"><img src="assets/gallery/thumbs/zenhome-079.webp" alt="ZENHOME u Bratislavy" loading="lazy"></a>
-        <a href="galerie.html#zenhome-u-rican" aria-label="ZENHOME u Říčan"><img src="assets/gallery/thumbs/zenhome-175.webp" alt="ZENHOME u Říčan" loading="lazy"></a>
+      <section class="preview-grid" aria-label="Výběr z galerie">
+        <a href="galerie.html#zenhome"><img src="assets/gallery/thumbs/zenhome-001.webp" alt="ZENHOME se zahradou" loading="lazy"></a>
+        <a href="galerie.html#zenhome"><img src="assets/gallery/thumbs/zenhome-014.webp" alt="Obytný prostor ZENHOME" loading="lazy"></a>
+        <a href="galerie.html#zenhome-u-prahy"><img src="assets/gallery/thumbs/zenhome-028.webp" alt="ZENHOME u Prahy" loading="lazy"></a>
+        <a href="galerie.html#zenhome-u-prahy"><img src="assets/gallery/thumbs/zenhome-040.webp" alt="Interiér ZENHOME u Prahy" loading="lazy"></a>
+        <a href="galerie.html#zenhome-u-brna"><img src="assets/gallery/thumbs/zenhome-050.webp" alt="ZENHOME u Brna" loading="lazy"></a>
+        <a href="galerie.html#zenhome-u-bratislavy"><img src="assets/gallery/thumbs/zenhome-079.webp" alt="ZENHOME u Bratislavy" loading="lazy"></a>
+        <a href="galerie.html#zenhome-u-nachoda"><img src="assets/gallery/thumbs/zenhome-100.webp" alt="ZENHOME u Náchoda" loading="lazy"></a>
+        <a href="galerie.html#zenhome-u-berouna"><img src="assets/gallery/thumbs/zenhome-120.webp" alt="ZENHOME u Berouna" loading="lazy"></a>
+        <a href="galerie.html#zenhome-u-rican"><img src="assets/gallery/thumbs/zenhome-140.webp" alt="ZENHOME u Říčan" loading="lazy"></a>
+        <a href="galerie.html#zenhome-u-noveho-jicina"><img src="assets/gallery/thumbs/zenhome-160.webp" alt="ZENHOME u Nového Jičína" loading="lazy"></a>
+        <a href="galerie.html#zenhome-u-plzne"><img src="assets/gallery/thumbs/zenhome-175.webp" alt="ZENHOME u Plzně" loading="lazy"></a>
+        <a href="galerie.html#zenhome-u-berouna-2"><img src="assets/gallery/thumbs/zenhome-190.webp" alt="Druhý ZENHOME u Berouna" loading="lazy"></a>
+        <a href="galerie.html#zenhome-u-slap"><img src="assets/gallery/thumbs/zenhome-210.webp" alt="ZENHOME u Slap" loading="lazy"></a>
+        <a href="galerie.html#zenhome-u-sazavy"><img src="assets/gallery/thumbs/zenhome-230.webp" alt="ZENHOME u Sázavy" loading="lazy"></a>
+        <a href="galerie.html#zenhome-u-moravskeho-krumlova"><img src="assets/gallery/thumbs/zenhome-260.webp" alt="ZENHOME u Moravského Krumlova" loading="lazy"></a>
+        <a href="galerie.html#zenhome-v-karpatech"><img src="assets/gallery/thumbs/zenhome-288.webp" alt="ZENHOME v Karpatech" loading="lazy"></a>
       </section>
     </section>
 
@@ -158,32 +241,40 @@
       <div class="wrap">
         <p class="kicker">Reference</p>
         <h2>Jak se v ZENHOME žije.</h2>
-        <div class="reviews-grid">
-          <figure class="review reveal">
-            <blockquote>„V ZENHOME by se nám bydlelo krásně, kdyby návštěvy své pobyty nenatahovaly neúměrně dlouho. Od té doby, co v něm bydlíme, se jim od nás nechce.“</blockquote>
-            <figcaption>Kamil &amp; Jana<br><span>ZENHOME u Prahy</span></figcaption>
-          </figure>
-          <figure class="review reveal">
-            <blockquote>„Jsme nadmíru spokojeni, cítili jsme se opravdu jako doma ihned po nastěhování. ZENHOME splnil naše očekávání – moderní, jednoduchý a praktický.“</blockquote>
-            <figcaption>Jiří &amp; Martina<br><span>ZENHOME u Brna</span></figcaption>
-          </figure>
-          <figure class="review reveal">
-            <blockquote>„Jednoduchý, funkční a krásný. ZENHOME se nám líbil od první chvíle. Bydlíme v něm již téměř tři roky a naše očekávání naplnil.“</blockquote>
-            <figcaption>Marek<br><span>ZENHOME u Nového Jičína</span></figcaption>
-          </figure>
-          <figure class="review reveal">
-            <blockquote>„Hledali jsme jednoduchou přízemní stavbu s maximálně efektivním využitím prostoru. Dům je tak akorát velký a skvěle prostorově řešený.“</blockquote>
-            <figcaption>Denis &amp; Lucie<br><span>ZENHOME u Plzně</span></figcaption>
-          </figure>
-          <figure class="review reveal">
-            <blockquote>„ZENHOME je pohodlný, energeticky opravdu úsporný dům, kde bydlí slunce. Je to také dům, kterým si testujeme názory lidí na to, jak se má bydlet.“</blockquote>
-            <figcaption>Jitka &amp; Tomáš<br><span>ZENHOME u Sázavy</span></figcaption>
-          </figure>
-          <figure class="review reveal">
-            <blockquote>„Žiju báječně. Bydlení v ZENHOME je na jedničku s hvězdičkou.“</blockquote>
-            <figcaption>Klaus<br><span>ZENHOME u Náchoda</span></figcaption>
-          </figure>
-        </div>
+        <section class="reviews-slider" data-reviews-slider aria-roledescription="carousel" aria-label="Zkušenosti obyvatel ZENHOME">
+          <div class="reviews-track">
+            <figure class="review-slide active" data-review-slide>
+              <img src="assets/review-kamil-jana.webp" alt="Kamil a Jana" loading="lazy">
+              <div><blockquote>„V ZENHOME by se nám bydlelo krásně, kdyby návštěvy své pobyty nenatahovaly neúměrně dlouho. Od té doby, co v něm bydlíme, se jim od nás nechce.“</blockquote><p class="review-attribution">Kamil, IT &amp; Jana, manažerka staveb<br><span>ZENHOME u Prahy</span></p></div>
+            </figure>
+            <figure class="review-slide" data-review-slide>
+              <img src="assets/review-jiri-martina.webp" alt="Jiří a Martina" loading="lazy">
+              <div><blockquote>„Jsme nadmíru spokojeni, cítili jsme se opravdu jako doma ihned po nastěhování. ZENHOME splnil naše očekávání – moderní, jednoduchý a praktický. Napojení terasy na jezírko je úžasné.“</blockquote><p class="review-attribution">Jiří, manažer ve strojírenství &amp; Martina<br><span>ZENHOME u Brna</span></p></div>
+            </figure>
+            <figure class="review-slide" data-review-slide>
+              <img src="assets/review-marek.webp" alt="Marek" loading="lazy">
+              <div><blockquote>„ZENHOME se nám líbil od první chvíle. Bylo jasné, že takový dům chceme. Bydlíme v něm již téměř tři roky a naše očekávání naplnil. Jednoduchý, funkční a krásný.“</blockquote><p class="review-attribution">Marek, pracovník charity<br><span>ZENHOME u Nového Jičína</span></p></div>
+            </figure>
+            <figure class="review-slide" data-review-slide>
+              <img src="assets/review-denis-lucie.webp" alt="Denis a Lucie" loading="lazy">
+              <div><blockquote>„Hledali jsme architektonicky jednoduchou přízemní stavbu s maximálně efektivním využitím prostoru. Bydlí se nám skvěle, dům je tak akorát velký a skvěle prostorově řešený.“</blockquote><p class="review-attribution">Denis, art director &amp; Lucie, manažerka<br><span>ZENHOME u Plzně</span></p></div>
+            </figure>
+            <figure class="review-slide" data-review-slide>
+              <img src="assets/review-jitka-tomas.webp" alt="Jitka a Tomáš" loading="lazy">
+              <div><blockquote>„ZENHOME je pohodlný, energeticky opravdu úsporný dům, kde bydlí slunce. Je to také dům, kterým si tajně testujeme názory různých lidí na to, jak se má bydlet.“</blockquote><p class="review-attribution">Jitka, úřednice &amp; Tomáš, geofyzik<br><span>ZENHOME u Sázavy</span></p></div>
+            </figure>
+            <figure class="review-slide" data-review-slide>
+              <img src="assets/review-klaus.webp" alt="Klaus" loading="lazy">
+              <div><blockquote>„Žiju báječně. Bydlení v ZENHOME je na jedničku s hvězdičkou.“</blockquote><p class="review-attribution">Klaus, programátor a fotograf<br><span>ZENHOME u Náchoda</span></p></div>
+            </figure>
+          </div>
+          <div class="slider-controls">
+            <button type="button" data-review-prev aria-label="Předchozí recenze">←</button>
+            <div class="slider-dots" data-review-dots role="group" aria-label="Vybrat recenzi"></div>
+            <button type="button" data-review-pause aria-label="Pozastavit automatické přehrávání">Ⅱ</button>
+            <button type="button" data-review-next aria-label="Další recenze">→</button>
+          </div>
+        </section>
       </div>
     </section>
 
@@ -235,6 +326,10 @@
         </div>
       </div>
     </section>
+
+    <figure class="full-bleed-image">
+      <img src="assets/gallery/full/zenhome-058.webp" alt="Světlý obytný prostor ZENHOME propojený se zahradou" loading="lazy">
+    </figure>
 
     <section class="section section-green team" id="kdo-jsme">
       <div class="wrap team-grid">
