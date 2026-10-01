@@ -176,7 +176,7 @@ h3 { font-size: clamp(2rem, 3vw, 3rem); }
 .concepts-grid.wrap { width: 100%; }
 .concepts-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1px; background: rgba(255,255,255,.3); }
 .concepts-grid figure { margin: 0; overflow: hidden; background: #172017; }
-.concepts-grid a { display: grid; aspect-ratio: 16/10; place-items: center; background: #172017; }
+.concepts-grid a { display: grid; aspect-ratio: 1; place-items: center; background: #172017; }
 .concepts-grid img { width: 100%; height: 100%; object-fit: contain; transition: transform .4s; }
 .concepts-grid figure:hover img { transform: scale(1.025); }
 .full-bleed-image { width: 100%; margin: 0; }
