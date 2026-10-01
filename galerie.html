@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Galerie realizací | ZENHOME</title>
+  <meta name="description" content="Prohlédněte si realizace domů ZENHOME v Česku a na Slovensku. Jeden prověřený princip, mnoho jedinečných domů.">
+  <meta name="theme-color" content="#f2f0e9">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="canonical" href="https://www.zenhome.cz/galerie.html">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="data/gallery.js"></script>
+  <script defer src="script.js"></script>
+  <script defer src="gallery.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#obsah">Přejít na obsah</a>
+  <header class="site-header inner-header" data-header>
+    <a class="wordmark" href="index.html" aria-label="ZENHOME, domů">ZENHOME<span>.</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" data-menu-toggle>
+      <span></span><span></span><span></span><span class="sr-only">Otevřít menu</span>
+    </button>
+    <nav class="main-nav" id="main-nav" aria-label="Hlavní navigace" data-menu>
+      <a href="index.html#o-zenhome">O Zenhome</a>
+      <a href="galerie.html" aria-current="page">Galerie</a>
+      <a href="index.html#reference">Reference</a>
+      <a href="index.html#kdo-jsme">Kdo jsme</a>
+      <a href="principy.html">Principy</a>
+      <a class="nav-contact" href="index.html#kontakt">Kontakt</a>
+    </nav>
+  </header>
+
+  <main id="obsah">
+    <section class="page-hero wrap">
+      <p class="kicker">Galerie realizací</p>
+      <h1>Jeden prověřený princip. Jedinečné domy.</h1>
+      <p class="lead-copy">ZENHOME pokaždé přizpůsobujeme konkrétnímu místu, výhledům a lidem, kteří v něm budou žít.</p>
+    </section>
+
+    <nav class="gallery-controls" aria-label="Filtrovat galerie">
+      <div class="filter-list" data-filters></div>
+    </nav>
+
+    <section class="gallery-shell">
+      <p class="gallery-count" data-gallery-count aria-live="polite"></p>
+      <div class="gallery-grid" data-gallery-grid></div>
+    </section>
+  </main>
+
+  <div class="lightbox" data-lightbox role="dialog" aria-modal="true" aria-label="Zvětšená fotografie">
+    <button class="lightbox-close" type="button" data-lightbox-close aria-label="Zavřít">×</button>
+    <button class="lightbox-prev" type="button" data-lightbox-prev aria-label="Předchozí fotografie">←</button>
+    <img data-lightbox-image src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="">
+    <button class="lightbox-next" type="button" data-lightbox-next aria-label="Další fotografie">→</button>
+    <p class="lightbox-caption" data-lightbox-caption></p>
+  </div>
+
+  <footer class="site-footer">
+    <a class="wordmark" href="index.html">ZENHOME<span>.</span></a>
+    <div class="footer-links">
+      <a href="index.html">Úvod</a>
+      <a href="principy.html">Principy</a>
+      <a href="https://www.instagram.com/zenhome.cz/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.facebook.com/zenhome.cz" target="_blank" rel="noopener">Facebook</a>
+    </div>
+    <p>© 2026 ZEN HOME, s.r.o.</p>
+  </footer>
+</body>
+</html>
