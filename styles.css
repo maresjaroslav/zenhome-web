@@ -302,7 +302,8 @@ h3 { font-size: clamp(2rem, 3vw, 3rem); }
   .statement-copy { padding-block: 75px; }
   .split-intro { padding-bottom: 70px; }
   .centered-cta { padding-top: 80px; }
-  .time-section { min-height: 820px; align-items: flex-end; padding: 0; }
+  .time-section { min-height: 0; display: block; padding: 0; }
+  .time-section > img { position: relative; inset: auto; display: block; width: 100%; height: auto; aspect-ratio: 4/3; object-fit: cover; object-position: center; }
   .time-card { width: 100%; padding: 40px 20px; }
   .section-topline { align-items: flex-start; flex-direction: column; }
   .preview-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; }
